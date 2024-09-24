@@ -1,0 +1,101 @@
+/* Sidebar container styling */
+.sidebar1 {
+  height: 100vh;
+  background-color: #313b34; /* Dark background similar to the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 250px; /* Set a fixed width for the sidebar */
+  border-right: 2px solid #ddd; /* Light gray border */
+  width: 310px;
+}
+
+/* Logo styling */
+.logo1 {
+  margin: 0 80px;
+  margin-top: 30px;
+}
+
+.logo1 img {
+  width: 150px; /* Adjusted logo size */
+}
+
+/* Navigation styling */
+.nav1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.navItem1 {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #b0bec5; /* Light text color */
+  transition: background-color 0.3s, color 0.3s, padding-left 0.3s;
+  width: 80%;
+  border-radius: 5%;
+  position: relative;
+}
+
+.navItem1 svg {
+  font-size: 30px;
+  margin-top: 3px;
+  color: #b0bec5; /* Light icon color */
+}
+
+.navItem1 span {
+  margin-left: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navItem1:hover {
+  background-color: #353d38; 
+  color: #0ac11c; /* White text on hover */
+  padding-left: 40px;
+}
+
+.aactive1 {
+  color: #0ac11c; 
+  padding-left: 40px;
+}
+
+/* Additional padding at the bottom to prevent last item from being too close to the edge */
+.sidebarBottomPadding {
+  padding-bottom: 20px;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #b0bec5; /* Light text color */
+  transition: background-color 0.3s, color 0.3s, padding-left 0.3s;
+  width: 80%;
+  border-radius: 5%;
+  position: relative;
+  margin-top: 60px;
+}
+
+.logout svg {
+  font-size: 30px;
+  margin-top: 3px;
+  color: #b0bec5; /* Light icon color */
+}
+
+.logout span {
+  margin-left: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logout:hover {
+  background-color: #353d38; 
+  color: #0ac11c; /* White text on hover */
+  padding-left: 40px;
+}

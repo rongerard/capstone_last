@@ -1,0 +1,288 @@
+/* General Layout */
+.doctorsSection {
+  padding: 20px;
+  background-color: #f5f7fa;
+  max-width: -webkit-fill-available;
+  margin-left: 309px;
+  height: 900px;
+}
+
+.header {
+  margin-left: -10px;
+  width: 102%;
+  height: 80px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting h1 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #000;
+}
+
+.greeting p {
+  margin: 0;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+}
+
+.headerIcon,
+.profileIcon {
+  color: #666;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.userName {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 25px;
+  margin-right: 50px;
+  color: #333;
+}
+
+
+/* Search and Filter Section */
+.searchAppointment {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchAppointment input {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 67%;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.filterBtn{
+  margin-left: 10px;
+}
+
+.filterBtn, .saveBtn {
+  padding: 11px 13px;
+  background-color: white; /* Button background color */
+  border: none; /* Remove default button border */
+  border-radius: 8px; /* Rounded edges */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for 3D effect */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.listBtn{
+  background-color: #008000; /* Green color */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 15px 30px; /* Padding for size */
+  width: 270px;
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline */
+  font-size: 16px; /* Text size */
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.listBtn:hover {
+  background-color: #006400;
+}
+
+/* Table Header */
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.tableHeader span {
+  flex: 1;
+  text-align: center;
+}
+
+/* Appointments List */
+.appointmentsList {
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Zebra-striped rows */
+.appointmentRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.appointmentRow:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.appointmentRow:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+/* Hover effect for rows */
+.appointmentRow:hover {
+  background-color: #d1e7ff; /* Light blue on hover */
+}
+
+/* Appointment row cell styling */
+.appointmentRow span {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Action button styling inside rows */
+.appointmentRow .action-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.appointmentRow .action-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Container */
+.modal-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal Title */
+.modal-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Modal Text */
+.modal-container p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.modal-container p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.modal-container p strong {
+  color: #000;
+}
+
+/* Close Button */
+.close-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Animation for the modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Modal customization for better aesthetics */
+.modal-body p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.modal-header h5 {
+  font-size: 20px;
+}
+
+.modal-header .close {
+  font-size: 24px;
+  color: #000;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}

@@ -1,0 +1,200 @@
+.mainContent {
+  padding: 20px;
+  margin-left: 310px;
+  max-width: -webkit-fill-available;
+  background-color: #f5f7fa;
+}
+
+.header {
+  margin-left: -10px;
+  width: 100.5%;
+  height: 80px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting h1 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #000;
+}
+
+.greeting p {
+  margin: 0;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+}
+
+.headerIcon,
+.profileIcon {
+  color: #666;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.userName {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 25px;
+  margin-right: 50px;
+}
+
+.banner {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #a3c4f7;
+  border-radius: 8px;
+  max-width: 100%;
+  height: 240px;
+}
+
+.bannerContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bannerImage {
+  margin-left: 50px;
+  width: 250px;
+  margin-right: 40px;
+}
+
+.bannerText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bannerText p {
+  margin: 0;
+  font-size: 1.9em;
+  color: #333;
+  font-weight: 600;
+}
+
+.findDoctorButton {
+  margin-top: 20px;
+  background-color: #6595e9;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.findDoctorButton:hover {
+  background-color: #357abd;
+}
+
+.appointmentsSection {
+  margin-top: 25px;
+}
+
+.appointmentsContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+thead th {
+  font-weight: normal;
+  text-align: left;
+  color: #666;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody td {
+  padding: 10px 15px;
+  color: #333;
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+th, td {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.completedAppointmentsSection {
+  margin-top: 25px;
+}
+
+.completedAppointmentsContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notificationsSection {
+  margin-top: 25px;
+}
+
+.notificationsContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.datetimeSection {
+  margin-top: 25px;
+}
+
+.datetimeContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctorsLink {
+  text-decoration: none;
+  color: white;
+}
+
